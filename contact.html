@@ -4,13 +4,75 @@
     <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/js.js"></script>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="css.css">
-    <title>Főoldal</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/css.css">
+    <title>Kapcsolatfelvétel</title>
 </head>
 
 <body>
-    <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.png" alt="Bootstrap" style="width: 50 px; height: 50px">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Főoldal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="m3.html">M3 Touring</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="m3.html">Összehasonlítás</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Kapcsolatfelvétel</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-    </header>
+      <main>
+        <section class="row justify-content-around section-content">
+          <div class="col text-center">
+            <h1>Kapcsolatfelvétel</h1>
+            <p class="margin-top"></p>
+            <p>Használd a lenti formot, hogy visszajelzést küldj nekünk az oldal működésével kapcsolatban, esetleg ha tartalmi hibát észlelsz!</p>
+            <form class="form-feedback">
+              <div class="form-textbox">
+                <input type="Text" id="name-textbox" class="form-textbox-input" placeholder="Név">
+              </div>
+              <div class="form-textbox">
+                <input type="Text" id="email-textbox" class="form-textbox-input" placeholder="Email">
+              </div>
+              <div class="form-textbox">
+                <input type="Text" class="form-textbox-input" placeholder="Név">
+              </div>
+              <div class="form-textarea">
+                <textarea></textarea>
+              </div>
+            </form>
+            <p class="margin-top"></p>
+          </div>
+          <div class="col text-center">
+            <div class="callout">
+              <h3>Telefonon is elérsz minket!</h3>
+              <p>
+                <h4>+36301234567</h4>
+              </p>
+            </div>
+            <div class="callout">
+              <h3>Vagy esetleg emailben?</h3>
+              <p>
+                <h4>hello@medvetojas.hu</h4>
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
 </body>
